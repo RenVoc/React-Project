@@ -1,4 +1,4 @@
-@font-face {
+footer-main@font-face {
   font-family: LeelawUI;
   src: url("../fonts/LeelawUI.ttf");
 }
@@ -91,19 +91,19 @@ footer .contacts {
 }
 footer .address {
   padding: 0 0 0 45px;
-  background: url("../images/footer-icon1.png") left center no-repeat;
+  background: url("../../my-app/src/images/footer-icon1.png") left center no-repeat;
   min-height: 30px;
 }
 footer .phone {
   padding: 5px 0 0 45px;
-  background: url("../images/footer-icon2.png") 2px center no-repeat;
+  background: url("../../my-app/src/images/footer-icon2.png") 2px center no-repeat;
   min-height: 25px;
   margin-top: 20px;
   font-size: 40px;
 }
 footer .mail {
   padding: 0 0 0 45px;
-  background: url("../images/footer-icon3.png") left center no-repeat;
+  background: url("../../my-app/src/images/footer-icon3.png") left center no-repeat;
   min-height: 17px;
   margin-top: 20px;
 }
@@ -130,7 +130,7 @@ footer .subscribe {
   color: #fff;
   width: 260px;
   padding: 30px 0 30px 155px;
-  background: url("../images/footer-icon4.png") left 35px no-repeat;
+  background: url("../../my-app/src/images/footer-icon4.png") left 35px no-repeat;
   margin-left: 55px;
 }
 footer .subscribe .text {
@@ -192,29 +192,29 @@ footer .socials li a {
   display: inline-block;
 }
 footer .socials li.fb a {
-  background: url("../images/socials.png") left bottom no-repeat;
+  background: url("../../my-app/src/images/socials.png") left bottom no-repeat;
 }
 
 footer .socials li.fb:hover a {
-  background: url("../images/socials.png") left top no-repeat;
+  background: url("../../my-app/src/images/socials.png") left top no-repeat;
 }
 footer .socials li.tw a {
-  background: url("../images/socials.png")  -42px bottom  no-repeat;
+  background: url("../../my-app/src/images/socials.png")  -42px bottom  no-repeat;
 }
 footer .socials li.tw:hover a {
-  background: url("../images/socials.png")  -42px top  no-repeat;
+  background: url("../../my-app/src/images/socials.png")  -42px top  no-repeat;
 }
 footer .socials li.in a {
-  background: url("../images/socials.png") -87px bottom  no-repeat;
+  background: url("../../my-app/src/images/socials.png") -87px bottom  no-repeat;
 }
 footer .socials li.in:hover a {
-  background: url("../images/socials.png") -87px top  no-repeat;
+  background: url("../../my-app/src/images/socials.png") -87px top  no-repeat;
 }
 footer .socials li.gp a {
-  background: url("../images/socials.png") -130px bottom no-repeat;
+  background: url("../../my-app/src/images/socials.png") -130px bottom no-repeat;
 }
 footer .socials li.gp:hover a {
-  background: url("../images/socials.png") -130px top no-repeat;
+  background: url("../../my-app/src/images/socials.png") -130px top no-repeat;
 }
 footer .copyright {
   font-size: 11px;
@@ -222,13 +222,16 @@ footer .copyright {
   text-align: center;
 }
 
+footer.footer-main{
+  margin-top: 0;
+}
 
 footer.footer-main .footer-presentation {
   float: right;
   color: #fff;
   width: 365px;
   padding: 20px 0 30px 94px;
-  background: url(../images/unified-presentation-icon.png) 8px 17px no-repeat;
+  background: url(../../my-app/src/images/unified-presentation-icon.png) 8px 17px no-repeat;
   margin-left: 35px;
   background-size: 54px;
 }
@@ -282,7 +285,7 @@ footer.footer-main .footer-presentation a {
 footer.footer-main .subscribe {
   margin-left: 35px;
   padding: 10px 0 30px 94px;
-  background: url(../images/footer-icon4.png) left 10px no-repeat;
+  background: url(../../my-app/src/images/footer-icon4.png) left 10px no-repeat;
   background-size: 72px;
   width: 365px;
   border-bottom: 1px solid #353C4A;
@@ -341,7 +344,7 @@ footer.footer-main .copyright .nete-logo-img img {
 }
 
 .main-header{
-  background: url('../images/header.svg') no-repeat;
+  background: url('../../my-app/src/images/header.svg') no-repeat;
   background-size: cover;
   margin: 0 0 170px;
   position: relative;
@@ -351,7 +354,7 @@ footer.footer-main .copyright .nete-logo-img img {
     &:before{
       content:'';
       position: absolute;
-      background: url('../images/plane.svg') no-repeat;
+      background: url('../../my-app/src/images/plane.svg') no-repeat;
       width: 700px;
       background-size: cover;
       height: 511px;
@@ -396,7 +399,7 @@ footer.footer-main .copyright .nete-logo-img img {
         left: -25px;
         width: 18px;
         height: 17px;
-        background: url('../images/phone.svg') no-repeat;
+        background: url('../../my-app/src/images/phone.svg') no-repeat;
       }
     }
   }
@@ -576,7 +579,7 @@ footer.footer-main .copyright .nete-logo-img img {
   padding: 40px 0 240px;
   margin: 40px 0 0;
   position: relative;
-  background-image: url('../images/clouds.svg');
+  background-image: url('../../my-app/src/images/clouds.svg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 350px;
@@ -586,7 +589,7 @@ footer.footer-main .copyright .nete-logo-img img {
     position: absolute;
     top: -34px;
     left: 18%;
-    background: url(../images/mini-plane.svg) no-repeat;
+    background: url(../../my-app/src/images/mini-plane.svg) no-repeat;
     width: 300px;
     height: 170px;
     background-size: cover;
@@ -631,8 +634,9 @@ footer.footer-main .copyright .nete-logo-img img {
 
 .pre-footer{
   margin: 20px 0;
-  background: url('../images/prefooter.svg') no-repeat;
+  background: url('../../my-app/src/images/ParallaxImage.jpg') no-repeat;
   background-size: cover;
+
   .form{
     background: none;
     .button-block{
@@ -641,8 +645,16 @@ footer.footer-main .copyright .nete-logo-img img {
   }
 }
 
+.calc-block{
+  background: #FAFAFA;
+  .calc-flex{
+    justify-content: space-around;
+  }
+}
+
+
 .potential{
-  background-image: url('../images/planes-bg.svg');
+  background-image: url('../../my-app/src/images/planes-bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2D3D57;
@@ -730,7 +742,7 @@ footer.footer-main .copyright .nete-logo-img img {
     height: 40px;
     width: 50px;
     b{
-      background: url(../images/select-arrow.svg) no-repeat;
+      background: url(../../my-app/src/images/select-arrow.svg) no-repeat;
       width: 23px;
       height: 11px;
       background-size: contain;
@@ -830,7 +842,7 @@ footer.footer-main .copyright .nete-logo-img img {
 .modal-window-image-block{
   width: 400px;
   height: 500px;
-  background: url('../images/modal-image.svg');
+  background: url('../../my-app/src/images/modal-image.svg');
   background-size: cover;
 }
 
@@ -952,7 +964,7 @@ footer.footer-main .copyright .nete-logo-img img {
 .price-slider-container .irs--round .irs-handle{
   width: 35px;
   height: 35px;
-  background: url(../images/bar-arrow.svg) no-repeat;
+  background: url(../../my-app/src/images/bar-arrow.svg) no-repeat;
   background-size: cover;
   border:none;
   box-shadow: none;
@@ -1014,7 +1026,7 @@ footer.footer-main .copyright .nete-logo-img img {
 html:not([dir=rtl]) .noUi-horizontal .noUi-handle{
   width: 35px;
   height: 35px;
-  background: url(../images/bar-arrow.svg) no-repeat;
+  background: url(../../my-app/src/images/bar-arrow.svg) no-repeat;
   background-size: cover;
   border: none;
   box-shadow: none;

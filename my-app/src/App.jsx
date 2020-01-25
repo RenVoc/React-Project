@@ -4,21 +4,16 @@ import Header from './templates/Header';
 import Content from "./templates/Content";
 import Menu from "./templates/Menu";
 import Footer from "./templates/Footer";
+import Modal from "./templates/Modal";
 import mainStyles from './styles/App.module.scss';
 
 function App() {
   return (
-    <div className={mainStyles.main_container}>
+    <div className="root-Wrapper flex-container flex-container_column">
         <Header />
-        <section className="centerWrapper">
-            <section className="content">
-                <Menu />
-                <Content />
-            </section>
-        </section>
-        <footer className="footer">
-            <Footer />
-        </footer>
+        <Content />
+        <Footer />
+        <Modal />
     </div>
   );
 }
