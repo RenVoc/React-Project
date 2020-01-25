@@ -1,0 +1,361 @@
+@media all and (max-width: 1300px) {
+  .price-slider-container .irs--round .irs-grid-text {
+    font-size: 14px;}
+
+  .main-header .center-wrap .header-plane {
+    width: 500px;
+	top: 130px;
+    background-size: contain;
+    height: 335px; }
+footer.footer-main .footer-presentation{
+	    max-width: 270px;
+    padding: 19px 0 30px 67px;
+    background: url(../images/unified-presentation-icon.png) 8px 17px no-repeat;
+    margin-left: 0px;
+    background-size: 50px;
+}
+
+footer.footer-main .footer-presentation .text{
+width: 130px;
+}
+
+footer.footer-main .footer-presentation a{
+padding: 6px 18px 7px;font-size: 14px;
+}
+	}
+@media all and (max-width: 1000px) {
+	 .modal .modalContent form .button-block {
+        display: flex;
+        justify-content: center;
+        margin: 25px 0 -30px; }
+  .center-wrap {
+    padding: 0 10px;
+    max-width: inherit; }
+	
+	.root-Wrapper .featured{
+		    padding: 40px 0 140px;
+			background-position: 0 330px;
+	}
+	
+	.plane-container .flex-card__image svg{display:none;}
+	.plane-container .flex-card__image img{display:block !important;margin:0 auto;}
+	
+	.modal .modalContent form .button-block.contact-recaptcha{
+		    margin: 25px auto;
+    max-width: 250px;
+	}
+	
+	.noUi-value{
+		font-size:12px;
+	}
+	
+	.form-container >br{
+		display:none;
+	}
+	
+	.header-plane{
+		display:none;
+	}
+
+  .promise .center-wrap {
+    padding: 0; }
+
+  .promise .plane-container .flex-container_column > div {
+	  text-align:center;
+    padding: 20px 10px; }
+  .promise .plane-container .flex-container_column:last-child > div:nth-child(odd) {
+    background: rgba(206, 220, 233, 0.3); }
+  .promise .plane-container .flex-container_column:first-child > div:nth-child(even) {
+    background: rgba(206, 220, 233, 0.3); }
+
+  .modal-window-image-block {
+    display: none; }
+	
+	 .modal .modalContent div.wpcf7-validation-errors,
+	.modal .modalContent   div.wpcf7-acceptance-missing, 
+	.modal .modalContent div.wpcf7-mail-sent-ok{
+	margin-top:45px;
+  }
+
+  .modal {
+    width: 315px;
+    position: relative; }
+    .modal .modalContent {
+      padding: 100px 20px 10px;
+      width: auto;    
+	  align-items: baseline;
+	      min-height: auto;
+      text-align: center;
+      position: relative; }
+
+  .modalTitle {
+    position: absolute;
+    top: -33px;
+    background: none;
+    left: 4%; }
+
+  h1 {
+    font-size: 24px;
+    line-height: 33px; }
+
+  .main-header {
+    margin: 0 0 120px; }
+    .main-header:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(0deg, rgba(238, 238, 238, 7.0e-05) -44.71%, rgba(0, 0, 0, 0.7) 122.6%);
+      background-blend-mode: multiply;
+      width: 100%;
+      height: 100%; }
+    .main-header .center-wrap {
+      padding: 0;
+      z-index: 0; }
+      .main-header .center-wrap:before {
+        content: '';
+        position: absolute;
+        background: url(../images/plane.svg) no-repeat;
+        width: 250px;
+        background-size: contain;
+        height: 185px;
+        top: 50%;
+        margin-top: -292px;
+        z-index: -1;
+        right: 50%;
+        margin-right: -139px;
+        opacity: 0.4; }
+
+  .header-top {
+    justify-content: space-between;
+    padding: 20px 10px;
+    background: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: calc(100% - 20px);
+    align-items: center; }
+    .header-top .phone-number a {
+      font-size: 13px;
+      line-height: 18px; }
+      .header-top .phone-number a:before {
+        top: 2px; }
+    .header-top .logo {
+      margin: 0; }
+      .header-top .logo img {
+        width: 140px; }
+
+  .header-middle {
+    margin-top: 90px;
+    text-align: center;
+    z-index: 2; }
+    .header-middle p {
+      font-size: 16px;
+      line-height: 22px; }
+
+  .header-bottom {
+    padding: 0 10px; }
+    .header-bottom .form-container {
+      flex-direction: column; }
+      .header-bottom .form-container__label {
+        margin: 20px 0;
+        width: 100%; }
+
+  .form__h3 {
+    font-size: 16px;
+    line-height: 22px; }
+
+  .button-block__button {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 10px 30px; }
+
+  p {
+    font-size: 16px;
+    line-height: 22px; }
+
+  h2 {
+    font-size: 22px;
+    line-height: 30px; }
+
+  .flex-container_row {
+    flex-direction: column; }
+
+  .promise .plane-container .flex-plane {
+    display: none; }
+
+  footer.footer-main .copyright .bank-information {
+    width: auto; }
+
+  .flex-card__image_circle > div {
+    width: 105px;
+    height: 105px;
+    margin: -85px auto 25px; }
+    .flex-card__image_circle > div img {
+      width: 65%; }
+
+  .flex-container.what-cards .flex-container__item {
+    flex-basis: 100%; }
+
+  .flex-card {
+    margin: 40px 0; }
+
+  .what-cards {
+    margin: 45px 0 0; }
+
+  .flex-card__p {
+    font-size: 14px;
+    line-height: 25px; }
+
+  .featured {
+    padding: 40px 0 75px; }
+    .featured:before {
+      width: 160px;
+      height: 100px;
+      top: -17px; }
+    .featured .featured-sponsors {
+      flex-direction: row;
+	  justify-content: end;
+	  flex-wrap:nowrap;
+      overflow-x: scroll; }
+	  
+	  .featured .featured-sponsors div+div{
+	      margin-left: 20px;
+	  }
+	  
+	  .promise{margin:0 auto 20px;}
+	  
+	  .form .form-container__label input, .form .form-container__label select,
+	  .form .form-container__label .placeholder,
+	  .form .form-container__label .select2-selection .select2-selection__rendered{
+		      color: #ffffff;
+	  }
+	  
+	  .placeholder-top{
+		  font-size:12px;
+	  }
+
+  .flex-card__title {
+    font-size: 20px;
+    line-height: 27px; }
+
+  .align-right {
+    text-align: center; }
+
+  .fsz20 {
+    font-size: 14px;
+    line-height: 19px; }
+    .fsz20 br {
+      display: none; }
+
+  .savings-info .monthly-volume {
+    font-size: 14px;
+    line-height: 19px; }
+
+  .savings-info .monthly-volume b {
+    font-size: 36px;
+    line-height: 49px; }
+
+  .price-slider-container .irs--round .irs-grid-text {
+    font-size: 10px;
+    line-height: 14px; }
+
+  .price-slider-container .irs--round .irs-line,
+  .price-slider-container .irs--round .irs-bar {
+    height: 7px; }
+
+  .price-slider-container .irs--round .irs-handle {
+    height: 19px;
+    width: 19px;
+    top: 19px; }
+
+  .savings-info .mini-desc {
+    font-size: 10px;
+    line-height: 14px; }
+    .savings-info .mini-desc br {
+      display: none; }
+
+  .potential {
+    padding: 20px;
+    margin: 0 auto; }
+    .potential > div {
+      padding: 20px; }
+    .potential .price-month {
+      font-size: 36px;
+      line-height: 49px; }
+    .potential .price-year {
+      font-size: 22.5px;
+      line-height: 31px; }
+    .potential p {
+      font-size: 14px;
+      line-height: 19px; }
+    .potential p.weight-bold {
+      font-size: 16px;
+      line-height: 22px; }
+
+  .form .form-container {
+    flex-direction: column; }
+    .form .form-container__label {
+      flex-basis: 100%;
+	  width:100%;
+      margin: 20px 0; }
+
+  footer .phone {
+    font-size: 36px;
+    line-height: 49px;
+margin: 0;	}
+
+footer .address{
+	min-height:auto;
+}
+
+  footer .contacts {
+    width: auto;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0;
+    display: flex;
+    flex-direction: column; }
+	
+	footer .mail{
+		margin-bottom: 20px;
+    margin-top: 5px;
+	}
+
+  footer .menu {
+    width: auto;
+    display: none; }
+
+  footer .socials {
+    padding-bottom: 15px; }
+
+  footer.footer-main .footer-presentation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    background: url(../images/unified-presentation-icon.png) center 17px no-repeat;
+    padding: 100px 0 30px 0;
+    background-size: 54px; }
+
+  footer.footer-main .footer-presentation .text {
+    width: auto; }
+
+  .price-slider-container {
+    width: 80%;
+    margin: 20px auto 40px; }
+
+  .pre-footer {
+    margin-bottom: 0; }
+
+  .header-bottom .button-block {
+    margin: 20px 0 -46px; }
+
+  footer .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+/*# sourceMappingURL=mobile.css.map */

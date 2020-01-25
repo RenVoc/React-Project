@@ -1,13 +1,14 @@
 import React from 'react';
-import './App.css';
+import './styles/App.module.scss';
 import Header from './templates/Header';
 import Content from "./templates/Content";
 import Menu from "./templates/Menu";
 import Footer from "./templates/Footer";
+import mainStyles from './styles/App.module.scss';
 
 function App() {
   return (
-    <div className="main-container">
+    <div className={mainStyles.main_container}>
         <Header />
         <section className="centerWrapper">
             <section className="content">
