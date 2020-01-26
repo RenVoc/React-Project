@@ -1,0 +1,278 @@
+footer {
+  background-color: #1C2A38;
+  color: #d0dce8;
+}
+footer .wrapper {
+  padding: 40px 0 10px;
+}
+footer a {
+  color: #d0dce8;
+}
+footer .contacts {
+  font-size: 18px;
+  width: 340px;
+  float: left;
+  padding: 20px 65px 15px 0;
+}
+footer .address {
+  padding: 0 0 0 45px;
+  background: url("../images/footer-icon1.png") left center no-repeat;
+  min-height: 30px;
+}
+footer .phone {
+  padding: 5px 0 0 45px;
+  background: url("../images/footer-icon2.png") 2px center no-repeat;
+  min-height: 25px;
+  margin-top: 20px;
+  font-size: 40px;
+}
+footer .mail {
+  padding: 0 0 0 45px;
+  background: url("../images/footer-icon3.png") left center no-repeat;
+  min-height: 17px;
+  margin-top: 20px;
+}
+footer .mail a {
+  border-bottom: 1px solid #5F6570;
+}
+footer .menu {
+  border-right: 1px solid #353C4A;
+  border-left: 1px solid #353C4A;
+  padding: 10px 30px 0 70px;
+  width: 150px;
+  float: left;
+}
+footer .menu ul {
+  margin: 0;
+}
+footer .menu ul li {
+  font-size: 14px;
+  list-style: disc;
+  margin-bottom: 7px;
+}
+footer .subscribe {
+  float: left;
+  color: #fff;
+  width: 260px;
+  padding: 30px 0 30px 155px;
+  background: url("../images/footer-icon4.png") left 35px no-repeat;
+  margin-left: 55px;
+}
+footer .subscribe .text {
+  font-size: 18px;
+  float: left;
+  width: 260px;
+}
+footer .subscribe .text p {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: LeelawRegular;
+}
+footer .subscribe .text h2 {
+  font-size: 24px;
+  font-family: LeelawRegular;
+  font-weight: normal;
+  margin-bottom: 6px;
+}
+footer .subscribe a {
+  display: inline-block;
+  margin-top: 17px;
+  font-size: 18px;
+  font-family: LeelawUIBold;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 23px;
+  padding: 6px 26px 7px;
+  cursor: pointer;
+  background-color: #E60027;
+  -webkit-transition: all  0.1s ease-out 0s;
+  -moz-transition: all  0.1s ease-out 0s;
+  -o-transition: all  0.1s ease-out 0s;
+  transition: all  0.1s ease-out 0s;
+}
+footer .subscribe a:hover {
+  background-color: #F34747;
+}
+
+footer .socials {
+  padding: 50px 0 0;
+  text-align: center;
+}
+footer .socials ul {
+  margin-top: 0;
+}
+footer .socials li {
+
+  display: inline-block;
+}
+footer .socials li.fb:hover a, footer .socials li.tw a,  footer .socials li.in a, footer .socials li.gp a {
+  -webkit-transition: all  0.1s ease-out 0s;
+  -moz-transition: all  0.1s ease-out 0s;
+  -o-transition: all  0.1s ease-out 0s;
+  transition: all  0.1s ease-out 0s;
+}
+footer .socials li a {
+  width: 43px;
+  height: 43px;
+  display: inline-block;
+}
+footer .socials li.fb a {
+  background: url("../images/socials.png") left bottom no-repeat;
+}
+
+footer .socials li.fb:hover a {
+  background: url("../images/socials.png") left top no-repeat;
+}
+footer .socials li.tw a {
+  background: url("../images/socials.png")  -42px bottom  no-repeat;
+}
+footer .socials li.tw:hover a {
+  background: url("../images/socials.png")  -42px top  no-repeat;
+}
+footer .socials li.in a {
+  background: url("../images/socials.png") -87px bottom  no-repeat;
+}
+footer .socials li.in:hover a {
+  background: url("../images/socials.png") -87px top  no-repeat;
+}
+footer .socials li.gp a {
+  background: url("../images/socials.png") -130px bottom no-repeat;
+}
+footer .socials li.gp:hover a {
+  background: url("../images/socials.png") -130px top no-repeat;
+}
+footer .copyright {
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+}
+
+footer.footer-main{
+  margin-top: 0;
+}
+
+footer.footer-main .footer-presentation {
+  float: right;
+  color: #fff;
+  width: 365px;
+  padding: 20px 0 30px 94px;
+  background: url(../images/unified-presentation-icon.png) 8px 17px no-repeat;
+  margin-left: 35px;
+  background-size: 54px;
+}
+
+
+footer.footer-main .footer-presentation .text h2 {
+  font-size: 14px;
+  font-family: LeelawUIBold;
+  margin-bottom: 0;
+  font-weight: normal;
+  line-height: 18px;
+}
+
+footer.footer-main .footer-presentation .text p {
+  font-size: 14px;
+  font-family: LeelawRegular;
+  line-height: 14px;
+  margin: 5px 0;
+}
+
+footer.footer-main .footer-presentation .button {
+  float: right;
+}
+
+footer.footer-main .footer-presentation .text {
+  width: 215px;
+  float: left;
+}
+footer.footer-main .copyright p, footer.footer-main .copyright {
+  font-size: 12px;
+  font-family: LeelawRegular;
+}
+
+footer.footer-main .footer-presentation a {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 17px;
+  font-family: LeelawUIBold;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 23px;
+  padding: 6px 26px 7px;
+  cursor: pointer;
+  background-color: #364561;
+  -webkit-transition: all 0.1s ease-out 0s;
+  -moz-transition: all 0.1s ease-out 0s;
+  -o-transition: all 0.1s ease-out 0s;
+  transition: all 0.1s ease-out 0s;
+}
+
+footer.footer-main .subscribe {
+  margin-left: 35px;
+  padding: 10px 0 30px 94px;
+  background: url(../images/footer-icon4.png) left 10px no-repeat;
+  background-size: 72px;
+  width: 365px;
+  border-bottom: 1px solid #353C4A;
+}
+
+footer.footer-main .copyright .bank-information p {
+  font-size: 12px;
+  line-height: 15px;
+  font-family: LeelawRegular;
+  border-top: 1px solid #515762;
+  padding: 2px 0;
+  margin: 0;
+}
+footer.footer-main .copyright .bank-information p:first-child {
+  border-top: none;
+}
+
+footer.footer-main .copyright .bank-information {
+  width: 440px;
+  margin: 15px auto 0;
+}
+
+
+.footer-logos-wrapper {
+  width: 193px;
+  margin: 5px auto 0;
+}
+.bbb-link {
+  margin-top: 10px;
+  float: left;
+}
+.bbb-link a {
+  display: inline-block;
+}
+.bbb-link img {
+  width: 83px;
+}
+.nete {
+  float: right;
+  margin-bottom: 22px;
+  margin-top: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer.footer-main .copyright .nete-subsidiary {
+  font-size: 14px;
+}
+footer.footer-main .copyright .nete-logo-img img {
+  width: 88px;
+}
+
+.pre-footer{
+  margin: 20px 0;
+  background: url('../images/ParallaxImage.jpg') no-repeat;
+  background-size: cover;
+
+  .form{
+    background: none;
+    .button-block{
+      margin-top: 20px;
+    }
+  }
+}
