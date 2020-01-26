@@ -13,7 +13,6 @@ function App() {
         <Header />
         <Content />
         <Footer />
-        <Modal />
     </div>
   );
 }

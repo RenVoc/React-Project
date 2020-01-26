@@ -6,7 +6,7 @@ function Content() {
             <section className="content">
                 <div className="center-wrap">
                     <h2 className="align-center color-red">What We Do</h2>
-                    <p style="text-align: center;">We help increase the profit margins while providing value-added
+                    <p className="t-center">We help increase the profit margins while providing value-added
                         services
                         to the Aviation Industry. On average our clients save $500 on every $100K they process with
                         us.</p>
@@ -83,7 +83,7 @@ function Content() {
                             <div className="flex-container__item m20 low-r-icon">
                                 <div className="flex-card__image  wow fadeInLeft">
                                     <div>
-                                        <img style="display:none;" src="my-app/src/images/Lowrate.png" />
+                                        <img className="dsplNone" src="my-app/src/images/Lowrate.png" />
                                             <svg className="" width="90" height="72" viewBox="0 0 90 72" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -123,7 +123,7 @@ function Content() {
                             <div className="flex-container__item m20 transparent-icon">
                                 <div className="flex-card__image  wow fadeInLeft">
                                     <div>
-                                        <img style="display:none;" src="my-app/src/images/Transparency.png" />
+                                        <img className="dsplNone" src="my-app/src/images/Transparency.png" />
                                             <svg className="transparent-icon" width="57" height="72" viewBox="0 0 57 72"
                                                  fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -142,7 +142,7 @@ function Content() {
                             <div className="flex-container__item m20 customer-icon">
                                 <div className="flex-card__image wow fadeInLeft">
                                     <div>
-                                        <img style="display:none;" src="my-app/src/images/Customer.png" />
+                                        <img className="dsplNone" src="my-app/src/images/Customer.png" />
                                             <svg className="" xmlns="http://www.w3.org/2000/svg" width="66" height="76"
                                                  viewBox="0 0 66 76" fill="none">
                                                 <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0"
@@ -546,7 +546,7 @@ function Content() {
                             <div className="flex-container__item m20 payment-icon">
                                 <div className="flex-card__image wow fadeInRight">
                                     <div>
-                                        <img style="display:none;" src="my-app/src/images/PaymentGateway.png" />
+                                        <img className="dsplNone"  src="my-app/src/images/PaymentGateway.png" />
                                             <svg className="" width="71" height="83" viewBox="0 0 71 83" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -596,7 +596,7 @@ function Content() {
                             <div className="flex-container__item m20 industry-icon">
                                 <div className="flex-card__image wow fadeInRight">
                                     <div>
-                                        <img style="display:none;" src="my-app/src/images/IndustrySpecific.png" />
+                                        <img className="dsplNone"  src="my-app/src/images/IndustrySpecific.png" />
                                             <svg className="" width="73" height="74" viewBox="0 0 73 74" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <mask id="mask4" mask-type="alpha" maskUnits="userSpaceOnUse" x="0"
@@ -619,7 +619,7 @@ function Content() {
                             <div className="flex-container__item m20 point-icon">
                                 <div className="flex-card__image wow fadeInRight">
                                     <div>
-                                        <img style="display:none;" src="my-app/src/images/Pointofsale.png" />
+                                        <img className="dsplNone"  src="my-app/src/images/Pointofsale.png" />
                                             <svg className="" width="71" height="81" viewBox="0 0 71 81" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"

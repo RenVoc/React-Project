@@ -2,7 +2,7 @@ import React from "react";
 
 function Modal() {
     return (
-        <div className="modal-window-wrap" style="display: none">
+        <div className="modal-window-wrap dsplNone" >
             <div className="modal-window">
                 <div className="modal-close"></div>
                 <div className="modal-window-body">
