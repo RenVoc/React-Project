@@ -1,7 +1,8 @@
 import React from "react";
 import logo from '../images/logo.svg';
 
-function Header() {
+function Header(props) {
+    console.log('Number' + props.phone);
     return (
         <header className="main-header">
             <div className="center-wrap">
@@ -9,10 +10,10 @@ function Header() {
                     <div className="logo">
                         <a href="/aviation"><img src={logo} alt="" /></a>
                     </div>
-                    <div className="phone-number"><a href="tel:+17869230532">786.923.0532</a></div>
+                    <div className="phone-number"><a href="tel:+17869230532">{props.phone}</a></div>
                 </div>
                 <div className="header-middle wow fadeInLeft">
-                    <h1>Low Credit Card Processing Fees With Value-Added Solutions</h1>
+                    <h1>Low Credit Card Processing <br/> Fees With Value-Added Solutions</h1>
                     <p>Merchant Services For The Aviation Industry</p>
                 </div>
                 <div className="header-bottom">
