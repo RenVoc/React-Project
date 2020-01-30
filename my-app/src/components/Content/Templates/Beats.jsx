@@ -2,13 +2,9 @@ import React from "react";
 
 function Beats() {
     return (
-        <main>
-            <section className="content">
-                <div className="centerWrapper">
-
-                </div>
-            </section>
-        </main>
+        <p>
+            Beats Info
+        </p>
     );
 }
 
