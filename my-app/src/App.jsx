@@ -1,15 +1,13 @@
 import React from 'react';
 import './styles/App.scss';
-import Header from './templates/Header';
-import Content from "./templates/Content";
-import Menu from "./templates/Menu";
-import Footer from "./templates/Footer";
-import Modal from "./templates/Modal";
+import Header from './components/Header/Header';
+import Content from "./components/Content/Content";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="root-Wrapper flex-container flex-container_column">
-        <Header phone="786.923.0532"/>
+    <div className="root-Wrapper flex-container">
+        <Header/>
         <Content />
         <Footer />
     </div>
