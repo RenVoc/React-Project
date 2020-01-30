@@ -1,0 +1,19 @@
+$width: 190px;
+
+.logo{
+  width: $width;
+  height: 80px;
+  a{
+    font-family: 'Raleway Medium', sans-serif;
+    font-size: 26px;
+    line-height:28px;
+    text-align: center;
+    color:#fff;
+  }
+}
+
+.menu{
+  width:calc(100% - #{$width});
+  flex-direction: row;
+  justify-content: space-evenly;
+}

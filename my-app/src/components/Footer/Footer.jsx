@@ -1,12 +1,13 @@
 import React from "react";
+import FooterStyle from './footer.module.scss';
 
 function Footer() {
     return (
         <footer className="footer-main">
-            <div className="center-wrap">
-                <span>
-                    Acid Tears Productions © All rights reserved <span className="curr-year"></span>
-                </span>
+            <div className="centerWrapper">
+                <div className={`${FooterStyle.footer} tCenter`}>
+                    Acid Tears Productions © All rights reserved {(new Date().getFullYear())}
+                </div>
             </div>
         </footer>
     );

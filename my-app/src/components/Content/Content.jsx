@@ -10,25 +10,29 @@ import Mastering from './Templates/Mastering';
 import SocialWeb from './Templates/SocialWeb';
 import VideoDev from './Templates/VideoDev';
 
+import {BrowserRouter, Route} from 'react-router-dom';
+
 function Content() {
     return (
-        <main>
-            <section className="content">
-                <div className="centerWrapper">
-                    <h1>Header</h1>
-                    <Beats/>
-                    <Clips/>
-                    <Distro/>
-                    <GroupDesign/>
-                    <GuitarVocRecording/>
-                    <LiveRelease/>
-                    <Lyrics/>
-                    <Mastering/>
-                    <SocialWeb/>
-                    <VideoDev/>
-                </div>
-            </section>
-        </main>
+            <main>
+                <section className="content">
+                    <div className="centerWrapper">
+                        <h1>Header</h1>
+                        <BrowserRouter>
+                            <Route component={Beats}/>
+                            <Route component={Clips}/>
+                            <Route component={Distro}/>
+                            <Route component={GroupDesign}/>
+                            <Route component={GuitarVocRecording}/>
+                            <Route component={LiveRelease}/>
+                            <Route component={Lyrics}/>
+                            <Route component={Mastering}/>
+                            <Route component={SocialWeb}/>
+                            <Route component={VideoDev}/>
+                        </BrowserRouter>
+                    </div>
+                </section>
+            </main>
     );
 }
 

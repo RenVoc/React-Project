@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="root-Wrapper flex-container">
+    <div className="root-Wrapper flex-container flex-container_column">
         <Header/>
         <Content />
         <Footer />

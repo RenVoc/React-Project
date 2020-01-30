@@ -4,6 +4,10 @@
 @import "../components/Menu/menu.module";
 @import "../components/Footer/footer.module";
 
+#root{
+  min-height: 100vh;
+}
+
 h1{
   color: #ffffff;
   font-size: 45px;
@@ -67,10 +71,13 @@ html,body {
 .root-Wrapper {
   position: relative;
   height: auto;
-  min-height: 100%;
+  min-height: 100vh;
   overflow: hidden;
   width:100%;
   margin:0 auto;
+  justify-content: space-between;
+  background: rgb(28,22,66);
+  background: linear-gradient(71deg, rgba(28,22,66,1) 0%, rgba(1,1,13,1) 48%, rgba(0,1,45,1) 100%);
   header,
   footer {
   }
@@ -85,6 +92,7 @@ a {
 .centerWrapper{
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .button-block{
@@ -110,18 +118,19 @@ a {
 }
 
 
+
 .flex-container{
   display: flex;
+  flex-direction: column;
   &_row{
     flex-direction: row;
   }
   &_column{
     flex-direction: column;
   }
-  &.what-cards{
-    .flex-container__item{
-      flex-basis: 24%;
-    }
+  &_center{
+    align-items: center;
+    justify-content: center;
   }
   &_jcsb{
     justify-content: space-between;
@@ -130,7 +139,7 @@ a {
 
 
 
-.t-center{
+.tCenter{
   text-align: center;
 }
 

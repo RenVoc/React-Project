@@ -1,13 +1,13 @@
-import React from "react";
+import React, {Component} from 'react';
+import Style from "./header.module.scss";
+import Menu from "../Menu/Menu";
 
-import Menu from "./components/Menu";
-import logo from '../images/logo.svg';
 
 function Header(props) {
     return (
         <header className="main-header">
-            <div className="center-wrap">
-                <div className="logo">
+            <div className="centerWrapper flex-container flex-container_row">
+                <div className={`${Style.logo} flex-container flex-container_center`}>
                     <a href="/">
                         Acid Tears <br/>
                         Production

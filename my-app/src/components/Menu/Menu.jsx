@@ -1,20 +1,22 @@
 import React from "react";
+import MenuWidth from '../Header/header.module.scss';
+import MenuStyle from './menu.module.scss';
 
 function Menu() {
     return (
-        <nav className="content-menu">
+        <nav className={`${MenuWidth.menu} flex-container flex-container_center`}>
             <a href="#">Мастеринг и Сведение</a>
             <a href="#">Дистрибьютинг</a>
             <span>
                 Дизайн
-                <nav className="drop-down">
+                <nav className={MenuStyle.dropDown}>
                     <a href="#">Оформление соц сетей</a>
                     <a href="#">Фирменный дизайн группы</a>
                 </nav>
             </span>
             <span>
                 Видео
-                <nav className="drop-down">
+                <nav className={MenuStyle.dropDown}>
                     <a href="#">Lyrics-видео и концертные задники</a>
                     <a href="#">Съемка клипов</a>
                     <a href="#">Монтаж</a>
@@ -22,7 +24,7 @@ function Menu() {
             </span>
             <span>
                 Запись
-                <nav className="drop-down">
+                <nav className={MenuStyle.dropDown}>
                     <a href="#">Сессионная запись гитар и вокала</a>
                     <a href="#">Драм-трекли, биты и тексты</a>
                 </nav>
