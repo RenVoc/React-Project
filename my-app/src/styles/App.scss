@@ -45,7 +45,7 @@ input{
   width: calc(100% - 30px);
 }
 
-select, input{
+select, input, a{
   outline:none;
   &:focus{
     outline:none;

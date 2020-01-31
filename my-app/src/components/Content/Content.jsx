@@ -10,29 +10,26 @@ import Mastering from './Templates/Mastering';
 import SocialWeb from './Templates/SocialWeb';
 import VideoDev from './Templates/VideoDev';
 
-import {BrowserRouter, Route} from 'react-router-dom';
-
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 function Content() {
     return (
-            <main>
-                <section className="content">
-                    <div className="centerWrapper">
-                        <h1>Header</h1>
-                        <BrowserRouter>
-                            <Route component={Beats}/>
-                            <Route component={Clips}/>
-                            <Route component={Distro}/>
-                            <Route component={GroupDesign}/>
-                            <Route component={GuitarVocRecording}/>
-                            <Route component={LiveRelease}/>
-                            <Route component={Lyrics}/>
-                            <Route component={Mastering}/>
-                            <Route component={SocialWeb}/>
-                            <Route component={VideoDev}/>
-                        </BrowserRouter>
-                    </div>
-                </section>
-            </main>
+        <main>
+            <section className="content">
+                <div className="centerWrapper">
+                    <h1>Header</h1>
+                    <Route path="/beats" component={Beats}/>
+                    <Route path="/clips" component={Clips}/>
+                    <Route path="/distro" component={Distro}/>
+                    <Route path="/design" component={GroupDesign}/>
+                    <Route path="/recording" component={GuitarVocRecording}/>
+                    <Route path="/liverelease" component={LiveRelease}/>
+                    <Route path="/lyrics" component={Lyrics}/>
+                    <Route path="/mastering" component={Mastering}/>
+                    <Route path="/socialweb" component={SocialWeb}/>
+                    <Route path="/videodev" component={VideoDev}/>
+                </div>
+            </section>
+        </main>
     );
 }
 

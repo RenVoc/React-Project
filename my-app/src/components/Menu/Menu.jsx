@@ -1,35 +1,36 @@
 import React from "react";
 import MenuWidth from '../Header/header.module.scss';
 import MenuStyle from './menu.module.scss';
+import {NavLink} from 'react-router-dom';
 
 function Menu() {
     return (
         <nav className={`${MenuWidth.menu} flex-container flex-container_center`}>
-            <a href="#">Мастеринг и Сведение</a>
-            <a href="#">Дистрибьютинг</a>
+            <NavLink to="/mastering">Мастеринг и Сведение</NavLink>
+            <NavLink to="/distro">Дистрибьютинг</NavLink>
             <span>
                 Дизайн
                 <nav className={MenuStyle.dropDown}>
-                    <a href="#">Оформление соц сетей</a>
-                    <a href="#">Фирменный дизайн группы</a>
+                    <NavLink to="/socialweb">Оформление соц сетей</NavLink>
+                    <NavLink to="/design">Фирменный дизайн группы</NavLink>
                 </nav>
             </span>
             <span>
                 Видео
                 <nav className={MenuStyle.dropDown}>
-                    <a href="#">Lyrics-видео и концертные задники</a>
-                    <a href="#">Съемка клипов</a>
-                    <a href="#">Монтаж</a>
+                    <NavLink to="/lyrics">Lyrics-видео и концертные задники</NavLink>
+                    <NavLink to="/clips">Съемка клипов</NavLink>
+                    <NavLink to="/videodev">Монтаж</NavLink>
                 </nav>
             </span>
             <span>
                 Запись
                 <nav className={MenuStyle.dropDown}>
-                    <a href="#">Сессионная запись гитар и вокала</a>
-                    <a href="#">Драм-трекли, биты и тексты</a>
+                    <NavLink to="/recording">Сессионная запись гитар и вокала</NavLink>
+                    <NavLink to="/beats">Драм-треки, биты и тексты</NavLink>
                 </nav>
             </span>
-            <a href="#">Концерты и релизы</a>
+            <NavLink to="/liverelease">Концерты и релизы</NavLink>
         </nav>
     );
 }
