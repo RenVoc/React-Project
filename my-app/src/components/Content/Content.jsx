@@ -17,16 +17,16 @@ function Content(props) {
             <section className="content">
                 <div className="centerWrapper">
                     <h1>Header Page</h1>
-                    <Route path="/beats" component={Beats}/>
-                    <Route path="/clips" component={Clips}/>
-                    <Route path="/distro" component={Distro}/>
-                    <Route path="/design" component={GroupDesign}/>
-                    <Route path="/recording" component={GuitarVocRecording}/>
-                    <Route path="/liverelease" component={LiveRelease}/>
-                    <Route path="/lyrics" component={Lyrics}/>
-                    <Route path="/mastering" component={Mastering}/>
-                    <Route path="/socialweb" component={SocialWeb}/>
-                    <Route path="/videodev" component={VideoDev}/>
+                    <Route path="/beats" render={ () => <Beats />}/>
+                    <Route path="/clips" render={ () => <Clips />}/>
+                    <Route path="/distro" render={ () => <Distro />}/>
+                    <Route path="/design" render={ () => <GroupDesign />}/>
+                    <Route path="/recording" render={ () => <GuitarVocRecording />}/>
+                    <Route path="/liverelease" render={ () => <LiveRelease />}/>
+                    <Route path="/lyrics" render={ () => <Lyrics />}/>
+                    <Route path="/mastering" render={ () => <Mastering />}/>
+                    <Route path="/socialweb" render={ () => <SocialWeb />}/>
+                    <Route path="/videodev" render={ () => <VideoDev />}/>
                 </div>
             </section>
         </main>
