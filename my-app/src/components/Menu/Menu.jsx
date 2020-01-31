@@ -31,7 +31,7 @@ function Menu(props) {
                 </nav>
             </span>
             <span>
-                Запись
+                Записи
                 <nav className={MenuStyle.dropDown}>
                     <MenuItem nameMenu="Сессионная запись гитар и вокала" menuLink="recording"/>
                     <MenuItem nameMenu="Драм-треки, биты и тексты" menuLink="beats"/>
