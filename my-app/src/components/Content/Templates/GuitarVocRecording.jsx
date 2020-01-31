@@ -1,6 +1,6 @@
 import React from "react";
 
-function GuitarVocRecord() {
+function GuitarVocRecord(props) {
     return (
         <p>
             Guitar/Vocal Recording Info

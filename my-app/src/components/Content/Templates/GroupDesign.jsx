@@ -1,6 +1,6 @@
 import React from "react";
 
-function GroupDesign() {
+function GroupDesign(props) {
     return (
         <p>
             Group of Design Info

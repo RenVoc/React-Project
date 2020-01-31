@@ -1,6 +1,6 @@
 import React from "react";
 
-function Mastering() {
+function Mastering(props) {
     return (
         <p>
             Mastering Info

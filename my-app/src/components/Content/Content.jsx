@@ -11,12 +11,12 @@ import SocialWeb from './Templates/SocialWeb';
 import VideoDev from './Templates/VideoDev';
 
 import {BrowserRouter as Router, Route} from 'react-router-dom'
-function Content() {
+function Content(props) {
     return (
         <main>
             <section className="content">
                 <div className="centerWrapper">
-                    <h1>Header</h1>
+                    <h1>Header Page</h1>
                     <Route path="/beats" component={Beats}/>
                     <Route path="/clips" component={Clips}/>
                     <Route path="/distro" component={Distro}/>

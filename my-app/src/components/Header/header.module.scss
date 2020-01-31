@@ -9,6 +9,9 @@ $width: 190px;
     line-height:28px;
     text-align: center;
     color:#fff;
+    &:hover{
+      text-decoration: none;
+    }
   }
 }
 

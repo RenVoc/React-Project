@@ -1,6 +1,6 @@
 import React from "react";
 
-function LiveRelease() {
+function LiveRelease(props) {
     return (
         <p>
             Live and Release Info

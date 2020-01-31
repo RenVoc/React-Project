@@ -1,7 +1,7 @@
 import React from "react";
 import FooterStyle from './footer.module.scss';
 
-function Footer() {
+function Footer(props) {
     return (
         <footer className="footer-main">
             <div className="centerWrapper">

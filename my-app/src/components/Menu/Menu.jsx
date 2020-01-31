@@ -3,34 +3,41 @@ import MenuWidth from '../Header/header.module.scss';
 import MenuStyle from './menu.module.scss';
 import {NavLink} from 'react-router-dom';
 
-function Menu() {
+function MenuItem(props) {
+    let path = "/" + props.menuLink;
+    return(
+        <NavLink to={path}>{props.nameMenu}</NavLink>
+    )
+}
+
+function Menu(props) {
     return (
         <nav className={`${MenuWidth.menu} flex-container flex-container_center`}>
-            <NavLink to="/mastering">Мастеринг и Сведение</NavLink>
-            <NavLink to="/distro">Дистрибьютинг</NavLink>
+            <MenuItem nameMenu="Мастеринг и Сведение" menuLink="mastering"/>
+            <MenuItem nameMenu="Дистрибьютинг" menuLink="distro"/>
             <span>
                 Дизайн
                 <nav className={MenuStyle.dropDown}>
-                    <NavLink to="/socialweb">Оформление соц сетей</NavLink>
-                    <NavLink to="/design">Фирменный дизайн группы</NavLink>
+                    <MenuItem nameMenu="Оформление соц сетей" menuLink="socialweb"/>
+                    <MenuItem nameMenu="Фирменный дизайн группы" menuLink="design"/>
                 </nav>
             </span>
             <span>
                 Видео
                 <nav className={MenuStyle.dropDown}>
-                    <NavLink to="/lyrics">Lyrics-видео и концертные задники</NavLink>
-                    <NavLink to="/clips">Съемка клипов</NavLink>
-                    <NavLink to="/videodev">Монтаж</NavLink>
+                    <MenuItem nameMenu="Lyrics-видео и концертные задники" menuLink="lyrics"/>
+                    <MenuItem nameMenu="Съемка клипов" menuLink="clips"/>
+                    <MenuItem nameMenu="Монтаж" menuLink="videodev"/>
                 </nav>
             </span>
             <span>
                 Запись
                 <nav className={MenuStyle.dropDown}>
-                    <NavLink to="/recording">Сессионная запись гитар и вокала</NavLink>
-                    <NavLink to="/beats">Драм-треки, биты и тексты</NavLink>
+                    <MenuItem nameMenu="Сессионная запись гитар и вокала" menuLink="recording"/>
+                    <MenuItem nameMenu="Драм-треки, биты и тексты" menuLink="beats"/>
                 </nav>
             </span>
-            <NavLink to="/liverelease">Концерты и релизы</NavLink>
+            <MenuItem nameMenu="Концерты и релизы" menuLink="liverelease"/>
         </nav>
     );
 }

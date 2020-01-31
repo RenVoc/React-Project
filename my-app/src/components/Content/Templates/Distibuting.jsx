@@ -1,6 +1,6 @@
 import React from "react";
 
-function Distributing() {
+function Distributing(props) {
     return (
         <p>
             Distributing Info

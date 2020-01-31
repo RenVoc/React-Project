@@ -1,6 +1,6 @@
 import React from "react";
 
-function SocialWeb() {
+function SocialWeb(props) {
     return (
         <p>
             SocialWeb Info

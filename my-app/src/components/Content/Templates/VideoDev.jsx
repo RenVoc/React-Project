@@ -1,6 +1,6 @@
 import React from "react";
 
-function VideoDev() {
+function VideoDev(props) {
     return (
         <p>
             Video Info

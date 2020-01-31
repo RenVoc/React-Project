@@ -1,6 +1,6 @@
 import React from "react";
 
-function Clips() {
+function Clips(props) {
     return (
         <p>
             Clips Info

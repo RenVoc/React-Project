@@ -1,6 +1,7 @@
 import React from "react";
 
-function Beats() {
+function Beats(props) {
+    let pageName = "Beats";
     return (
         <p>
             Beats Info
