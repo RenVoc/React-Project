@@ -29,7 +29,7 @@ function Menu(props) {
     );
     return (
         <nav className={`${MenuWidth.menu} flex-container flex-container_center`}>
-            { MenuItem }
+            {MenuItem}
             <span>
                 Дизайн
                 <nav className="dropDown">

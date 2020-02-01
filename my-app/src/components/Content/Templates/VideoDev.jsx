@@ -1,10 +1,14 @@
 import React from "react";
 
 function VideoDev(props) {
+    let Title = props.title;
     return (
-        <p>
-            Video Info
-        </p>
+        <div>
+            <h1>{Title}</h1>
+            <p>
+                Video Info
+            </p>
+        </div>
     );
 }
 

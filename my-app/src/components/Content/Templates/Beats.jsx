@@ -1,11 +1,14 @@
 import React from "react";
 
 function Beats(props) {
-    let pageName = "Beats";
+    let Title = props.title;
     return (
-        <p>
-            Beats Info
-        </p>
+        <div>
+            <h1>{Title}</h1>
+            <p>
+                Beats Info
+            </p>
+        </div>
     );
 }
 

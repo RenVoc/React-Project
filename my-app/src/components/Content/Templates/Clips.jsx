@@ -1,10 +1,14 @@
 import React from "react";
 
 function Clips(props) {
+    let Title = props.title;
     return (
-        <p>
-            Clips Info
-        </p>
+        <div>
+            <h1>{Title}</h1>
+            <p>
+                Clips Info
+            </p>
+        </div>
     );
 }
 

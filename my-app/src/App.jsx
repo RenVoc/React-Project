@@ -11,7 +11,7 @@ function App(props) {
     <div className="root-Wrapper flex-container flex-container_column">
         <Router>
             <Header state={props.state}/>
-            <Content />
+            <Content state={props.state.TitlePages}/>
             <Footer />
         </Router>
     </div>

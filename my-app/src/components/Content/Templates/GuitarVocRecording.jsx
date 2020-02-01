@@ -1,10 +1,14 @@
 import React from "react";
 
 function GuitarVocRecord(props) {
+    let Title = props.title;
     return (
-        <p>
-            Guitar/Vocal Recording Info
-        </p>
+        <div>
+            <h1>{Title}</h1>
+            <p>
+                Guitar/Vocal Recording Info
+            </p>
+        </div>
     );
 }
 

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Style from "./header.module.scss";
-import Menu from "../Menu/Menu";
+import Menu from './../Menu/Menu';
 
 function Header(props) {
 

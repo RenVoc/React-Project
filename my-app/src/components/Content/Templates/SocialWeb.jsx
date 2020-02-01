@@ -1,10 +1,14 @@
 import React from "react";
 
 function SocialWeb(props) {
+    let Title = props.title;
     return (
-        <p>
-            SocialWeb Info
-        </p>
+        <div>
+            <h1>{Title}</h1>
+            <p>
+                SocialWeb Info
+            </p>
+        </div>
     );
 }
 
