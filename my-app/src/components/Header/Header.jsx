@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import Style from "./header.module.scss";
 import Menu from "../Menu/Menu";
 
-
 function Header(props) {
+
     return (
         <header className="main-header">
             <div className="centerWrapper flex-container flex-container_row">
@@ -13,7 +13,7 @@ function Header(props) {
                         Production
                     </a>
                 </div>
-                <Menu />
+                <Menu state={props.state}/>
             </div>
         </header>
     );

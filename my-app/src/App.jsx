@@ -6,11 +6,11 @@ import Footer from "./components/Footer/Footer";
 
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 
-function App() {
+function App(props) {
   return (
     <div className="root-Wrapper flex-container flex-container_column">
         <Router>
-            <Header/>
+            <Header state={props.state}/>
             <Content />
             <Footer />
         </Router>
