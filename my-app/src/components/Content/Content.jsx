@@ -17,7 +17,11 @@ function Content(props) {
         <main>
             <section className="content">
                 <div className="centerWrapper">
-                    <Route exact path="/" render={ () => <MainPage comments={props.state.Comments} title={props.state.TitlePages[10].title}/>}/>
+                    <Route exact path="/" render={ () => <MainPage
+                        addCommentInfo={props.addCommentInfo}
+                        CommentsInfo={props.state.Comments}
+                        title={props.state.TitlePages[10].title}/>}
+                    />
 
                     <Route path="/beats" render={ () => <Beats title={props.state.TitlePages[9].title}/>}/>
                     <Route path="/clips" render={ () => <Clips title={props.state.TitlePages[5].title}/>}/>

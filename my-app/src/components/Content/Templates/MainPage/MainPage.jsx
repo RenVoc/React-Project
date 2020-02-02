@@ -6,7 +6,13 @@ function MainPage(props) {
     let NewDescription = React.createRef();
     let NewName = React.createRef();
 
-    let commentItem = props.comments.map(function(comment, i){
+    let addComment = () =>{
+      let commentText = NewDescription.current.value;
+      let commentName = NewName.current.value;
+      props.addCommentInfo(commentText, commentName);
+    };
+
+    let commentItem = props.CommentsInfo.map(function(comment, i){
             return(
                 <div className="comment_item" key={i}>
                     <span className="com_name">{comment.name}</span>
@@ -35,7 +41,7 @@ function MainPage(props) {
                         <textarea name="" id="" ref={NewDescription}></textarea>
                     </div>
                     <div className="form_button">
-                        <button className="btn" >Send your comment</button>
+                        <button className="btn" onClick={addComment}>Send your comment</button>
                     </div>
                 </form>
             </div>

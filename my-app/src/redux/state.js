@@ -38,4 +38,14 @@ let state = {
     ]
 };
 
+export let addCommentInfo = (commentText, commentName) => {
+    debugger;
+    let newComment = {
+        name:commentName,
+        text: commentText
+    };
+
+    state.Comments.push(newComment)
+};
+
 export default state;
