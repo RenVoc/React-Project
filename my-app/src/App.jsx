@@ -11,7 +11,11 @@ function App(props) {
     <div className="root-Wrapper flex-container flex-container_column">
         <Router>
             <Header state={props.state}/>
-            <Content addCommentInfo={props.addCommentInfo} state={props.state}/>
+            <Content
+                updateCommentInfo={props.updateCommentInfo}
+                newComment={props.state.newComment}
+                addCommentInfo={props.addCommentInfo}
+                state={props.state}/>
             <Footer />
         </Router>
     </div>

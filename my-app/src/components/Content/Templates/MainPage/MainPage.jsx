@@ -6,14 +6,14 @@ function MainPage(props) {
     let NewDescription = React.createRef();
     let NewName = React.createRef();
 
-    let addComment = () =>{
-      let commentText = NewDescription.current.value;
-      let commentName = NewName.current.value;
-      props.addCommentInfo(commentText, commentName);
+    let addComment = () => {
+        let commentText = NewDescription.current.value;
+        let commentName = NewName.current.value;
+        props.addCommentInfo(commentText, commentName);
     };
 
-    let commentItem = props.CommentsInfo.map(function(comment, i){
-            return(
+    let commentItem = props.CommentsInfo.map(function (comment, i) {
+            return (
                 <div className="comment_item" key={i}>
                     <span className="com_name">{comment.name}</span>
                     <div className="com">{comment.text}</div>
@@ -23,7 +23,9 @@ function MainPage(props) {
     );
 
     let onCommentChange = () => {
-
+        let newText = NewDescription.current.value;
+        let newName = NewName.current.value;
+        props.updateCommentInfo(newText,newName);
     };
 
     return (
@@ -35,14 +37,18 @@ function MainPage(props) {
                 <div className="form">
                     <div className="label-block">
                         <label htmlFor="" className="label">Your Name</label>
-                        <input type="text" placeholder="Name" ref={NewName}/>
+                        <input type="text" placeholder="Name"
+                               ref={NewName}
+                               onChange={onCommentChange}
+                               value={props.newComment.name}
+                        />
                     </div>
                     <div className="label-block">
                         <label htmlFor="" className="label">Your Message</label>
                         <textarea name="" id=""
                                   ref={NewDescription}
                                   onChange={onCommentChange}
-                                  value={props.newCommentText}
+                                  value={props.newComment.text}
                         />
                     </div>
                     <div className="form_button">

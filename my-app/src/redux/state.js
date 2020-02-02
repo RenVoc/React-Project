@@ -32,22 +32,30 @@ let state = {
         {title: 'Beats and Drum-tracks', path: '/beats'},
         {title: 'Main Page Title', path: '/'},
     ],
-    Comments:[
-        {name:'Имя - дата',text: 'Комментарий'},
-        {name:'Имя - дата 2',text: 'Комментарий 2'},
-        {name:'Имя - дата 3',text: 'Комментарий 3'},
-        {name:'Имя - дата 3',text: 'Комментарий 4'}
+    Comments: [
+        {name: 'Имя - дата', text: 'Комментарий'},
+        {name: 'Имя - дата 2', text: 'Комментарий 2'},
+        {name: 'Имя - дата 3', text: 'Комментарий 3'},
+        {name: 'Имя - дата 3', text: 'Комментарий 4'}
     ],
-    newCommentText: 'Yor message',
+    newComment: [
+        {name: 'Yor name', text: 'Yor message'}
+    ]
 };
 
 export let addCommentInfo = (commentText, commentName) => {
     let newComment = {
-        name:commentName,
+        name: commentName,
         text: commentText
     };
 
     state.Comments.push(newComment);
+    reRenderTree(state);
+};
+
+export let updateCommentInfo = (newText, newName) => {
+    state.newComment.text = newText;
+    state.newComment.name = newName;
     reRenderTree(state);
 };
 
