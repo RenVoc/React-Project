@@ -22,28 +22,33 @@ function MainPage(props) {
         }
     );
 
+    let onCommentChange = () => {
+
+    };
+
     return (
         <div>
             <h1>{Title}</h1>
             <div className="comments">
-
                 {commentItem}
-
                 <h3>Add your comment</h3>
-
-                <form action="" method="GET" className="form">
+                <div className="form">
                     <div className="label-block">
                         <label htmlFor="" className="label">Your Name</label>
                         <input type="text" placeholder="Name" ref={NewName}/>
                     </div>
                     <div className="label-block">
                         <label htmlFor="" className="label">Your Message</label>
-                        <textarea name="" id="" ref={NewDescription}></textarea>
+                        <textarea name="" id=""
+                                  ref={NewDescription}
+                                  onChange={onCommentChange}
+                                  value={props.newCommentText}
+                        />
                     </div>
                     <div className="form_button">
                         <button className="btn" onClick={addComment}>Send your comment</button>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     );

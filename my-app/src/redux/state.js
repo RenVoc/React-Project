@@ -1,3 +1,5 @@
+import {reRenderTree} from "../render";
+
 let state = {
     MenuItemInformation: [
         {nameMenu: "Мастеринг и Сведение", menuLink: "/mastering"},
@@ -35,17 +37,18 @@ let state = {
         {name:'Имя - дата 2',text: 'Комментарий 2'},
         {name:'Имя - дата 3',text: 'Комментарий 3'},
         {name:'Имя - дата 3',text: 'Комментарий 4'}
-    ]
+    ],
+    newCommentText: 'Yor message',
 };
 
 export let addCommentInfo = (commentText, commentName) => {
-    debugger;
     let newComment = {
         name:commentName,
         text: commentText
     };
 
-    state.Comments.push(newComment)
+    state.Comments.push(newComment);
+    reRenderTree(state);
 };
 
 export default state;

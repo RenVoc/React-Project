@@ -1,13 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {reRenderTree} from "./render";
+import state from "./redux/state";
 
-import state from './redux/state';
-import {addCommentInfo} from './redux/state';
+reRenderTree(state);
 
-ReactDOM.render(<App addCommentInfo={addCommentInfo} state={state}/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
