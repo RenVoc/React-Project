@@ -9,6 +9,7 @@ import Lyrics from './Templates/Lyrics';
 import Mastering from './Templates/Mastering';
 import SocialWeb from './Templates/SocialWeb';
 import VideoDev from './Templates/VideoDev';
+import MainPage from './Templates/MainPage';
 import {BrowserRouter as Router, NavLink, Route} from 'react-router-dom'
 
 function Content(props) {
@@ -16,6 +17,7 @@ function Content(props) {
         <main>
             <section className="content">
                 <div className="centerWrapper">
+                    <Route exact path="/" render={ () => <MainPage title={props.state[10].title}/>}/>
                     <Route path="/beats" render={ () => <Beats title={props.state[9].title}/>}/>
                     <Route path="/clips" render={ () => <Clips title={props.state[5].title}/>}/>
                     <Route path="/distro" render={ () => <Distro title={props.state[1].title}/>}/>

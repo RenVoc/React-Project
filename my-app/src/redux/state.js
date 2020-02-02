@@ -28,6 +28,7 @@ let state = {
         {title: 'Guitar/Vocal Recording', path: '/recording'},
         {title: 'Lives and Release', path: '/liverelease'},
         {title: 'Beats and Drum-tracks', path: '/beats'},
+        {title: 'Main Page Title', path: '/'},
     ]
 };
 

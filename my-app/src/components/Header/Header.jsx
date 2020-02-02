@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Style from "./header.module.scss";
 import Menu from './../Menu/Menu';
+import {NavLink} from 'react-router-dom';
 
 function Header(props) {
 
@@ -8,10 +9,10 @@ function Header(props) {
         <header className="main-header">
             <div className="centerWrapper flex-container flex-container_row">
                 <div className={`${Style.logo} flex-container flex-container_center`}>
-                    <a href="/">
+                    <NavLink to="/">
                         Acid Tears <br/>
                         Production
-                    </a>
+                    </NavLink>
                 </div>
                 <Menu state={props.state}/>
             </div>
