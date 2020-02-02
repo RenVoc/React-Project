@@ -20,4 +20,13 @@ $width: 190px;
   width:calc(100% - #{$width});
   flex-direction: row;
   justify-content: space-evenly;
+
+  a,span{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Raleway SemiBold';
+    &:hover{
+      cursor: pointer;
+    }
+  }
 }

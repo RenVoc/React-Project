@@ -29,6 +29,12 @@ let state = {
         {title: 'Lives and Release', path: '/liverelease'},
         {title: 'Beats and Drum-tracks', path: '/beats'},
         {title: 'Main Page Title', path: '/'},
+    ],
+    Comments:[
+        {name:'Имя - дата',text: 'Комментарий'},
+        {name:'Имя - дата 2',text: 'Комментарий 2'},
+        {name:'Имя - дата 3',text: 'Комментарий 3'},
+        {name:'Имя - дата 3',text: 'Комментарий 4'}
     ]
 };
 

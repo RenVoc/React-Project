@@ -2,14 +2,6 @@
   display: none;
 }
 
-a,span{
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: 'Raleway SemiBold';
-  &:hover{
-    cursor: pointer;
-  }
-}
 
 a{
   &:hover{

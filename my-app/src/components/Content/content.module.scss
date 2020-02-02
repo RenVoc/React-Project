@@ -1,0 +1,51 @@
+.comments{
+  .form{
+    width: 300px;
+    &_button{
+      margin: 5px 0;
+      .btn{
+        border: none;
+        font-size: 20px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background: rgba(255,255,255,0.3);
+        color: rgba(255,255,255,.6);
+      }
+    }
+    .label-block{
+      margin-bottom: 15px;
+      .label{
+        color: #fff;
+        margin-bottom: 5px;
+        display: block;
+        font-size: 16px;
+        font-family: 'Raleway ExtraLight';
+      }
+      input, textarea{
+        border: none;
+        padding: 5px 10px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 5px;
+        width: 100%;
+        font-size: 20px;
+        color: rgba(255,255,255,0.4);
+        resize: none;
+      }
+    }
+  }
+  .comment_item{
+    .com_name{
+      font-size: 14px;
+      text-transform: capitalize;
+      color: #ffffff;
+    }
+    .com{
+      font-size: 16px;
+      margin-top: 5px;
+      color: #ffffff;
+    }
+    +.comment_item{
+      margin-top: 15px;
+    }
+  }
+}
