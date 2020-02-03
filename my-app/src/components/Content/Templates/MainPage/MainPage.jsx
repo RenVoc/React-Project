@@ -10,6 +10,10 @@ function MainPage(props) {
         let commentText = NewDescription.current.value;
         let commentName = NewName.current.value;
         props.addCommentInfo(commentText, commentName);
+
+        let commentTextNull = NewDescription.current.value = '';
+        let commentNameNull = NewName.current.value = '';
+        props.updateCommentInfo(commentTextNull, commentNameNull);
     };
 
     let commentItem = props.CommentsInfo.map(function (comment, i) {
@@ -28,19 +32,23 @@ function MainPage(props) {
         props.updateCommentInfo(newText,newName);
     };
 
+    let handleSubmit = (event) => {
+        event.preventDefault();
+    };
+
     return (
         <div>
             <h1>{Title}</h1>
             <div className="comments">
                 {commentItem}
                 <h3>Add your comment</h3>
-                <div className="form">
+                <form onSubmit={handleSubmit} className="form">
                     <div className="label-block">
                         <label htmlFor="" className="label">Your Name</label>
-                        <input type="text" placeholder="Name"
+                        <input type="text"
                                ref={NewName}
                                onChange={onCommentChange}
-                               value={props.newComment.name}
+                               value={props.newCommentName}
                         />
                     </div>
                     <div className="label-block">
@@ -48,13 +56,13 @@ function MainPage(props) {
                         <textarea name="" id=""
                                   ref={NewDescription}
                                   onChange={onCommentChange}
-                                  value={props.newComment.text}
+                                  value={props.newCommentText}
                         />
                     </div>
                     <div className="form_button">
                         <button className="btn" onClick={addComment}>Send your comment</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     );

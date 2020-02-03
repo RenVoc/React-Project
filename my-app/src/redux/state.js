@@ -1,4 +1,7 @@
-import {reRenderTree} from "../render";
+let reRenderTree = () => {
+
+}
+
 
 let state = {
     MenuItemInformation: [
@@ -38,12 +41,13 @@ let state = {
         {name: 'Имя - дата 3', text: 'Комментарий 3'},
         {name: 'Имя - дата 3', text: 'Комментарий 4'}
     ],
-    newComment: [
-        {name: 'Yor name', text: 'Yor message'}
-    ]
+    newCommentName: 'Your name',
+    newCommentText: 'Your message'
 };
 
-export let addCommentInfo = (commentText, commentName) => {
+window.state = state;
+
+export const addCommentInfo = (commentText, commentName) => {
     let newComment = {
         name: commentName,
         text: commentText
@@ -53,10 +57,14 @@ export let addCommentInfo = (commentText, commentName) => {
     reRenderTree(state);
 };
 
-export let updateCommentInfo = (newText, newName) => {
-    state.newComment.text = newText;
-    state.newComment.name = newName;
+export const updateCommentInfo = (newText, newName) => {
+    state.newCommentText = newText;
+    state.newCommentName = newName;
     reRenderTree(state);
+};
+
+export const subscribe = (observer) =>{
+    reRenderTree = observer;
 };
 
 export default state;
