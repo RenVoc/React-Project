@@ -40,27 +40,30 @@ let store = {
         newCommentName: 'Your name',
         newCommentText: 'Your message'
     },
-    getState(){
-        return this._state;
-    },
     _callSubscriber() {
 
     },
-    addCommentInfo(commentText, commentName) {
-        let newComment = {
-            name: commentName,
-            text: commentText
-        };
-        this._state.Comments.push(newComment);
-        this._callSubscriber(this._state);
-    },
-    updateCommentInfo(newText, newName) {
-        this._state.newCommentText = newText;
-        this._state.newCommentName = newName;
-        this._callSubscriber(this._state);
+
+    getState(){
+        return this._state;
     },
     subscribe(observer) {
         this._callSubscriber = observer;
+    },
+
+    dispatch(action){
+        if(action.type === 'ADD-POST'){
+            let newComment = {
+                name: action.commentName,
+                text: action.commentText
+            };
+            this._state.Comments.push(newComment);
+            this._callSubscriber(this._state);
+        } else if (action.type === 'UPDATE-COMMENT-INFO'){
+            this._state.newCommentText = action.newText;
+            this._state.newCommentName = action.newName;
+            this._callSubscriber(this._state);
+        }
     },
 };
 

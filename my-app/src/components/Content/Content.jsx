@@ -18,9 +18,7 @@ function Content(props) {
             <section className="content">
                 <div className="centerWrapper">
                     <Route exact path="/" render={ () => <MainPage
-                        updateCommentInfo={props.updateCommentInfo}
-                        newComment={props.newComment}
-                        addCommentInfo={props.addCommentInfo}
+                        dispatch={props.dispatch}
                         CommentsInfo={props.state.Comments}
                         title={props.state.TitlePages[10].title}/>}
                     />

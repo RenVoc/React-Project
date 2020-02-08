@@ -7,8 +7,7 @@ import {addCommentInfo, updateCommentInfo, subscribe} from './redux/state';
 
 let reRenderTree = (state) => {
     ReactDOM.render(<App
-        updateCommentInfo={store.updateCommentInfo.bind(store)}
-        addCommentInfo={store.addCommentInfo.bind(store)}
+        dispatch={store.dispatch.bind(store)}
         state={state}/>, document.getElementById('root'));
 };
 

@@ -12,9 +12,7 @@ function App(props) {
         <Router>
             <Header state={props.state}/>
             <Content
-                updateCommentInfo={props.updateCommentInfo}
-                newComment={props.state.newComment}
-                addCommentInfo={props.addCommentInfo}
+                dispatch={props.dispatch}
                 state={props.state}/>
             <Footer />
         </Router>

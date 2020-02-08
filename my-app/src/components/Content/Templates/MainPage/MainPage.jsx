@@ -6,15 +6,6 @@ function MainPage(props) {
     let NewDescription = React.createRef();
     let NewName = React.createRef();
 
-    let addComment = () => {
-        let commentText = NewDescription.current.value;
-        let commentName = NewName.current.value;
-        props.addCommentInfo(commentText, commentName);
-
-        let commentTextNull = NewDescription.current.value = '';
-        let commentNameNull = NewName.current.value = '';
-        props.updateCommentInfo(commentTextNull, commentNameNull);
-    };
 
     let commentItem = props.CommentsInfo.map(function (comment, i) {
             return (
@@ -26,15 +17,35 @@ function MainPage(props) {
         }
     );
 
-    let onCommentChange = () => {
-        let newText = NewDescription.current.value;
-        let newName = NewName.current.value;
-        props.updateCommentInfo(newText, newName);
-    };
-
     let handleSubmit = (event) => {
         event.preventDefault();
     };
+
+    let addComment = () => {
+        let commentText = NewDescription.current.value;
+        let commentName = NewName.current.value;
+        let action =  {
+            type: 'ADD-POST',
+            commentName: commentName,
+            commentText: commentText
+        };
+        props.dispatch(action);
+
+        NewDescription.current.value = '';
+        NewName.current.value = '';
+    };
+
+    let onCommentChange = () => {
+        let newText = NewDescription.current.value;
+        let newName = NewName.current.value;
+        let action = {
+            type: 'ADD-POST',
+            newText: newText,
+            newName: newName
+        };
+        props.dispatch(action);
+    };
+
 
     return (
         <div>
