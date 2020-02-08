@@ -29,7 +29,7 @@ function MainPage(props) {
     let onCommentChange = () => {
         let newText = NewDescription.current.value;
         let newName = NewName.current.value;
-        props.updateCommentInfo(newText,newName);
+        props.updateCommentInfo(newText, newName);
     };
 
     let handleSubmit = (event) => {
