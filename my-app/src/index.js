@@ -7,8 +7,9 @@ import {addCommentInfo, updateCommentInfo, subscribe} from './redux/state';
 
 let reRenderTree = (state) => {
     ReactDOM.render(<App
+        state={state}
         dispatch={store.dispatch.bind(store)}
-        state={state}/>, document.getElementById('root'));
+       />, document.getElementById('root'));
 };
 
 reRenderTree(store.getState());

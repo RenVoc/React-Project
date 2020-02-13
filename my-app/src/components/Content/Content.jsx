@@ -1,4 +1,4 @@
-import React from "react";
+import  React from "react";
 import Beats from './Templates/Beats';
 import Clips from './Templates/Clips';
 import Distro from './Templates/Distibuting';

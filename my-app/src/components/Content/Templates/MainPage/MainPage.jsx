@@ -25,7 +25,7 @@ function MainPage(props) {
         debugger;
         let commentText = NewDescription.current.value;
         let commentName = NewName.current.value;
-        let action = addCommentActionCreator(commentName, commentText);
+        let action = addCommentActionCreator(commentName, commentText, );
         props.dispatch(action);
         NewDescription.current.value = '';
         NewName.current.value = '';

@@ -10,8 +10,8 @@ function Header(props) {
             <div className="centerWrapper flex-container flex-container_row">
                 <div className={`${Style.logo} flex-container flex-container_center`}>
                     <NavLink to="/">
-                        Acid Tears <br/>
-                        Production
+                        Acid Tears
+                        <div>Production</div>
                     </NavLink>
                 </div>
                 <Menu state={props.state}/>
