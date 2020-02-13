@@ -1,3 +1,6 @@
+const add_post = 'ADD-POST';
+const update_comment_info = 'UPDATE-COMMENT-INFO';
+
 let store = {
     _state: {
         MenuItemInformation: [
@@ -52,19 +55,35 @@ let store = {
     },
 
     dispatch(action){
-        if(action.type === 'ADD-POST'){
+        if(action.type === add_post){
             let newComment = {
                 name: action.commentName,
                 text: action.commentText
             };
             this._state.Comments.push(newComment);
             this._callSubscriber(this._state);
-        } else if (action.type === 'UPDATE-COMMENT-INFO'){
+        } else if (action.type === update_comment_info){
             this._state.newCommentText = action.newText;
             this._state.newCommentName = action.newName;
             this._callSubscriber(this._state);
         }
     },
+};
+
+export const addCommentActionCreator = (commentName, commentText) => {
+    return {
+        type: add_post,
+        commentName: commentName,
+        commentText: commentText
+    }
+};
+
+export const onCommentChangeActionCreator = (newText, newName) => {
+    return {
+        type: update_comment_info,
+        newText: newText,
+        newName: newName
+    }
 };
 
 window.store = store;

@@ -1,11 +1,11 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
+import {addCommentActionCreator, onCommentChangeActionCreator} from "../../../../redux/state";
 
 function MainPage(props) {
     let Title = props.title;
     let NewDescription = React.createRef();
     let NewName = React.createRef();
-
 
     let commentItem = props.CommentsInfo.map(function (comment, i) {
             return (
@@ -22,15 +22,11 @@ function MainPage(props) {
     };
 
     let addComment = () => {
+        debugger;
         let commentText = NewDescription.current.value;
         let commentName = NewName.current.value;
-        let action =  {
-            type: 'ADD-POST',
-            commentName: commentName,
-            commentText: commentText
-        };
+        let action = addCommentActionCreator(commentName, commentText);
         props.dispatch(action);
-
         NewDescription.current.value = '';
         NewName.current.value = '';
     };
@@ -38,11 +34,7 @@ function MainPage(props) {
     let onCommentChange = () => {
         let newText = NewDescription.current.value;
         let newName = NewName.current.value;
-        let action = {
-            type: 'ADD-POST',
-            newText: newText,
-            newName: newName
-        };
+        let action = onCommentChangeActionCreator(newText, newName);
         props.dispatch(action);
     };
 
