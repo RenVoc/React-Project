@@ -20,4 +20,21 @@ const CommentReducer = (state, action) => {
     }
 };
 
+
+export const addCommentActionCreator = (commentName, commentText) => {
+    return {
+        type: add_post,
+        commentName: commentName,
+        commentText: commentText
+    }
+};
+
+export const onCommentChangeActionCreator = (newText, newName) => {
+    return {
+        type: update_comment_info,
+        newText: newText,
+        newName: newName
+    }
+};
+
 export default CommentReducer;

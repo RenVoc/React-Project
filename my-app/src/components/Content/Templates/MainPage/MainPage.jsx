@@ -1,6 +1,6 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import {addCommentActionCreator, onCommentChangeActionCreator} from "../../../../redux/state";
+import {addCommentActionCreator, onCommentChangeActionCreator} from "../../../../redux/CommentMainPageReducer";
 
 function MainPage(props) {
     let Title = props.title;

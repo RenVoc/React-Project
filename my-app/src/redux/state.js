@@ -1,8 +1,5 @@
 import CommentReducer from "./CommentMainPageReducer";
 
-const add_post = 'ADD-POST';
-const update_comment_info = 'UPDATE-COMMENT-INFO';
-
 let store = {
     _state: {
         MenuItemInformation: [
@@ -62,21 +59,6 @@ let store = {
     },
 };
 
-export const addCommentActionCreator = (commentName, commentText) => {
-    return {
-        type: add_post,
-        commentName: commentName,
-        commentText: commentText
-    }
-};
-
-export const onCommentChangeActionCreator = (newText, newName) => {
-    return {
-        type: update_comment_info,
-        newText: newText,
-        newName: newName
-    }
-};
 
 window.store = store;
 
