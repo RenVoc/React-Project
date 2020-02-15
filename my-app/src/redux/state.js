@@ -1,3 +1,5 @@
+import CommentReducer from "./CommentMainPageReducer";
+
 const add_post = 'ADD-POST';
 const update_comment_info = 'UPDATE-COMMENT-INFO';
 
@@ -55,18 +57,8 @@ let store = {
     },
 
     dispatch(action){
-        if(action.type === add_post){
-            let newComment = {
-                name: action.commentName,
-                text: action.commentText
-            };
-            this._state.Comments.push(newComment);
-            this._callSubscriber(this._state);
-        } else if (action.type === update_comment_info){
-            this._state.newCommentText = action.newText;
-            this._state.newCommentName = action.newName;
-            this._callSubscriber(this._state);
-        }
+        this._state = CommentReducer(this._state, action);
+        this._callSubscriber(this._state);
     },
 };
 
