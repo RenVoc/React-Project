@@ -1,8 +1,18 @@
 const add_post = 'ADD-POST';
 const update_comment_info = 'UPDATE-COMMENT-INFO';
 
+let initialState = {
+    Comments: [
+        {name: 'Имя - дата', text: 'Комментарий'},
+        {name: 'Имя - дата 2', text: 'Комментарий 2'},
+        {name: 'Имя - дата 3', text: 'Комментарий 3'},
+        {name: 'Имя - дата 3', text: 'Комментарий 4'}
+    ],
+    newCommentName: 'Your name',
+    newCommentText: 'Your message'
+};
 
-const CommentReducer = (state, action) => {
+const CommentReducer = (state = initialState, action) => {
     switch (action.type) {
         case add_post:
             let newComment = {
