@@ -22,7 +22,6 @@ function MainPage(props) {
     };
 
     let addComment = () => {
-        debugger;
         let commentText = NewDescription.current.value;
         let commentName = NewName.current.value;
         let action = addCommentActionCreator(commentName, commentText, );
