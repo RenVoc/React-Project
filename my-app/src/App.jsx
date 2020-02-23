@@ -13,7 +13,7 @@ function App(props) {
             <Header state={props.store.getState()}/>
             <Content
                 dispatch={props.dispatch}
-                store={props.store}/>
+                store={props.store.getState()}/>
             <Footer />
         </Router>
     </div>

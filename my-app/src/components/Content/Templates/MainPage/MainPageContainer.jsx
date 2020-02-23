@@ -3,23 +3,20 @@ import {addCommentActionCreator, onCommentChangeActionCreator} from "../../../..
 import MainPage from "./MainPage";
 
 function MainPageContainer(props) {
-    let state = props.store.getState();
 
     let addComment = (commentText, commentName) => {
-        let action = addCommentActionCreator(commentText, commentName);
-        props.store.dispatch(action);
+        props.dispatch(addCommentActionCreator(commentText, commentName));
     };
 
     let onCommentChange = (newText, newName) => {
-        let action = onCommentChangeActionCreator(newText, newName);
-        props.store.dispatch(action);
+        props.dispatch(onCommentChangeActionCreator(newText, newName));
     };
 
 
     return (
        <MainPage onCommentChangeActionCreator={onCommentChange}
                  addCommentActionCreator={addComment}
-                 commentItem={state.CommentariesForm.Comments}/>
+                 commentItem={props.store.CommentariesForm.Comments}/>
     );
 }
 
