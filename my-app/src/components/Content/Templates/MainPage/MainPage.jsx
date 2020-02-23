@@ -7,7 +7,7 @@ function MainPage(props) {
     let NewDescription = React.createRef();
     let NewName = React.createRef();
 
-    let commentItem = props.CommentsInfo.map(function (comment, i) {
+    let commentItem = props.commentItem.map(function (comment, i) {
             return (
                 <div className="comment_item" key={i}>
                     <span className="com_name">{comment.name}</span>
@@ -17,15 +17,10 @@ function MainPage(props) {
         }
     );
 
-    let handleSubmit = (event) => {
-        event.preventDefault();
-    };
-
     let addComment = () => {
         let commentText = NewDescription.current.value;
         let commentName = NewName.current.value;
-        let action = addCommentActionCreator(commentName, commentText, );
-        props.dispatch(action);
+        props.addCommentActionCreator(commentName, commentText, );
         NewDescription.current.value = '';
         NewName.current.value = '';
     };
@@ -33,8 +28,7 @@ function MainPage(props) {
     let onCommentChange = () => {
         let newText = NewDescription.current.value;
         let newName = NewName.current.value;
-        let action = onCommentChangeActionCreator(newText, newName);
-        props.dispatch(action);
+        props.onCommentChangeActionCreator(newText, newName);
     };
 
 
@@ -44,7 +38,7 @@ function MainPage(props) {
             <div className="comments">
                 {commentItem}
                 <h3>Add your comment</h3>
-                <form onSubmit={handleSubmit} className="form">
+                <form className="form">
                     <div className="label-block">
                         <label htmlFor="" className="label">Your Name</label>
                         <input type="text"

@@ -3,25 +3,26 @@ import MenuWidth from '../Header/header.module.scss';
 import {NavLink} from 'react-router-dom';
 
 function Menu(props) {
-    let MenuItem = props.state.Menu.MenuItemInformation.map(function(menu, i){
+    debugger;
+    let MenuItem = props.state.MenuItems.MenuItemInformation.map(function(menu, i){
             return(
                 <NavLink to={menu.menuLink} key={i} >{menu.nameMenu}</NavLink>
             )
         }
     );
-    let MenuItemDesign = props.state.Menu.MenuItemInformationDesign.map(function(menu2, i){
+    let MenuItemDesign = props.state.MenuItems.MenuItemInformationDesign.map(function(menu2, i){
             return(
                 <NavLink to={menu2.menuLink} key={i}>{menu2.nameMenu}</NavLink>
             )
         }
     );
-    let MenuItemVideo = props.state.Menu.MenuItemInformationVideo.map(function(menu3, i) {
+    let MenuItemVideo = props.state.MenuItems.MenuItemInformationVideo.map(function(menu3, i) {
             return(
                 <NavLink to={menu3.menuLink} key={i}>{menu3.nameMenu}</NavLink>
             )
         }
     );
-    let MenuItemRecord = props.state.Menu.MenuItemInformationRecording.map(function(menu4, i){
+    let MenuItemRecord = props.state.MenuItems.MenuItemInformationRecording.map(function(menu4, i){
             return(
                 <NavLink to={menu4.menuLink} key={i}>{menu4.nameMenu}</NavLink>
             )

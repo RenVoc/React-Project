@@ -11,16 +11,15 @@ import SocialWeb from './Templates/SocialWeb';
 import VideoDev from './Templates/VideoDev';
 import MainPage from './Templates/MainPage/MainPage';
 import {BrowserRouter as Router, NavLink, Route} from 'react-router-dom'
+import MainPageContainer from "./Templates/MainPage/MainPageContainer";
 
 function Content(props) {
     return (
         <main>
             <section className="content">
                 <div className="centerWrapper">
-                    <Route exact path="/" render={ () => <MainPage
-                        dispatch={props.dispatch}
-                        CommentsInfo={props.state.CommentariesForm.Comments}
-                        title={props.state.TitlePage.TitlePages[10].title}/>}
+                    <Route exact path="/" render={ () => <MainPageContainer
+                        store={props.store}/>}
                     />
 
                     <Route path="/beats" render={ () => <Beats title={props.state.TitlePage.TitlePages[9].title}/>}/>

@@ -7,11 +7,11 @@ import MenuReducer from "./MenuReducer";
 let reducers = combineReducers({
     CommentariesForm: CommentReducer,
     TitlePage: TitlePageReducer,
-    Menu: MenuReducer,
+    MenuItems: MenuReducer,
 });
-
 
 let store = createStore(reducers);
 
 window.store = store;
+
 export default store;
