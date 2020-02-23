@@ -3,7 +3,6 @@ import MenuWidth from '../Header/header.module.scss';
 import {NavLink} from 'react-router-dom';
 
 function Menu(props) {
-    debugger;
     let MenuItem = props.state.MenuItems.MenuItemInformation.map(function(menu, i){
             return(
                 <NavLink to={menu.menuLink} key={i} >{menu.nameMenu}</NavLink>

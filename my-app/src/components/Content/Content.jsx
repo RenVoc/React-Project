@@ -18,9 +18,7 @@ function Content(props) {
         <main>
             <section className="content">
                 <div className="centerWrapper">
-                    <Route exact path="/" render={ () => <MainPageContainer
-                        store={props.store}/>}
-                    />
+                    <Route exact path="/" render={ () => <MainPageContainer store={props.store}/>}/>
 
                     <Route path="/beats" render={ () => <Beats title={props.state.TitlePage.TitlePages[9].title}/>}/>
                     <Route path="/clips" render={ () => <Clips title={props.state.TitlePage.TitlePages[5].title}/>}/>

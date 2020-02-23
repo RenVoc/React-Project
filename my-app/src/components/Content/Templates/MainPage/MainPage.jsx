@@ -31,6 +31,9 @@ function MainPage(props) {
         props.onCommentChangeActionCreator(newText, newName);
     };
 
+    let handleSubmit = (event) => {
+        event.preventDefault();
+    };
 
     return (
         <div>
@@ -38,7 +41,7 @@ function MainPage(props) {
             <div className="comments">
                 {commentItem}
                 <h3>Add your comment</h3>
-                <form className="form">
+                <form onSubmit={handleSubmit} className="form">
                     <div className="label-block">
                         <label htmlFor="" className="label">Your Name</label>
                         <input type="text"
@@ -56,7 +59,7 @@ function MainPage(props) {
                         />
                     </div>
                     <div className="form_button">
-                        <button className="btn" onClick={addComment}>Send your comment</button>
+                        <button onChange={handleSubmit} className="btn" onClick={addComment}>Send your comment</button>
                     </div>
                 </form>
             </div>
