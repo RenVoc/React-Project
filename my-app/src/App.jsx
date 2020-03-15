@@ -10,10 +10,8 @@ function App(props) {
   return (
     <div className="root-Wrapper flex-container flex-container_column">
         <Router>
-            <Header state={props.store.getState()}/>
-            <Content
-                dispatch={props.dispatch}
-                store={props.store.getState()}/>
+            <Header />
+            <Content />
             <Footer />
         </Router>
     </div>

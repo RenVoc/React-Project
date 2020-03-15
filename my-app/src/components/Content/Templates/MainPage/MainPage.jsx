@@ -1,6 +1,4 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
-import {addCommentActionCreator, onCommentChangeActionCreator} from "../../../../redux/CommentMainPageReducer";
 
 function MainPage(props) {
     let Title = props.title;
@@ -20,7 +18,7 @@ function MainPage(props) {
     let addComment = () => {
         let commentText = NewDescription.current.value;
         let commentName = NewName.current.value;
-        props.addCommentActionCreator(commentName, commentText, );
+        props.addCommentActionCreator(commentName, commentText);
         NewDescription.current.value = '';
         NewName.current.value = '';
     };

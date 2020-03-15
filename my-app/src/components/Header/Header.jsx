@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Style from "./header.module.scss";
-import Menu from './../Menu/Menu';
+import MenuContainer from './../Menu/MenuContainer';
 import {NavLink} from 'react-router-dom';
 
 function Header(props) {
@@ -14,7 +14,7 @@ function Header(props) {
                         <div>Production</div>
                     </NavLink>
                 </div>
-                <Menu state={props.state}/>
+                <MenuContainer />
             </div>
         </header>
     );

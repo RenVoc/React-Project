@@ -1,15 +1,14 @@
 import  React from "react";
-import Beats from './Templates/Beats';
-import Clips from './Templates/Clips';
-import Distro from './Templates/Distibuting';
-import GroupDesign from './Templates/GroupDesign';
-import GuitarVocRecording from './Templates/GuitarVocRecording';
-import LiveRelease from './Templates/LiveRelease';
-import Lyrics from './Templates/Lyrics';
-import Mastering from './Templates/Mastering';
-import SocialWeb from './Templates/SocialWeb';
-import VideoDev from './Templates/VideoDev';
-import MainPage from './Templates/MainPage/MainPage';
+import BeatsContainer from './Templates/Beats/BeatsContainer';
+import ClipsContainer from './Templates/Clips/ClipsContainer';
+import DistibutingContainer from './Templates/Distributing/DistibutingContainer';
+import GroupDesignContainer from './Templates/GroupDesign/GroupDesignContainer';
+import GuitarVocRecordingContainer from './Templates/GuitarVocRecording/GuitarVocRecordingContainer';
+import LiveReleaseContainer from './Templates/LiveRelease/LiveReleaseContainer';
+import LyricsContainer from './Templates/Lyrics/LyricsContainer';
+import MasteringContainer from './Templates/Mastering/MasteringContainer';
+import SocialWebContainer from './Templates/SocialWeb/SocialWebContainer';
+import VideoDevContainer from './Templates/VideoDev/VideoDevContainer';
 import {BrowserRouter as Router, NavLink, Route} from 'react-router-dom'
 import MainPageContainer from "./Templates/MainPage/MainPageContainer";
 
@@ -18,18 +17,18 @@ function Content(props) {
         <main>
             <section className="content">
                 <div className="centerWrapper">
-                    <Route exact path="/" render={ () => <MainPageContainer dispatch={props.dispatch} store={props.store}/>}/>
+                    <Route exact path="/" render={ () => <MainPageContainer/>}/>
 
-                    <Route path="/beats" render={ () => <Beats title={props.store.TitlePage.TitlePages[9].title}/>}/>
-                    <Route path="/clips" render={ () => <Clips title={props.store.TitlePage.TitlePages[5].title}/>}/>
-                    <Route path="/distro" render={ () => <Distro title={props.store.TitlePage.TitlePages[1].title}/>}/>
-                    <Route path="/design" render={ () => <GroupDesign title={props.store.TitlePage.TitlePages[3].title}/>}/>
-                    <Route path="/recording" render={ () => <GuitarVocRecording title={props.store.TitlePage.TitlePages[7].title}/>}/>
-                    <Route path="/liverelease" render={ () => <LiveRelease title={props.store.TitlePage.TitlePages[8].title}/>}/>
-                    <Route path="/lyrics" render={ () => <Lyrics title={props.store.TitlePage.TitlePages[4].title}/>}/>
-                    <Route path="/mastering" render={ () => <Mastering title={props.store.TitlePage.TitlePages[0].title}/>}/>
-                    <Route path="/socialweb" render={ () => <SocialWeb title={props.store.TitlePage.TitlePages[2].title}/>}/>
-                    <Route path="/videodev" render={ () => <VideoDev title={props.store.TitlePage.TitlePages[6].title}/>}/>
+                    <Route path="/beats" render={ () => <BeatsContainer title={props.TitlePage}/>}/>
+                    <Route path="/clips" render={ () => <ClipsContainer title={props.TitlePage}/>}/>
+                    <Route path="/distro" render={ () => <DistibutingContainer title={props.TitlePage}/>}/>
+                    <Route path="/design" render={ () => <GroupDesignContainer title={props.TitlePage}/>}/>
+                    <Route path="/recording" render={ () => <GuitarVocRecordingContainer title={props.TitlePage}/>}/>
+                    <Route path="/liverelease" render={ () => <LiveReleaseContainer title={props.TitlePage}/>}/>
+                    <Route path="/lyrics" render={ () => <LyricsContainer title={props.TitlePage}/>}/>
+                    <Route path="/mastering" render={ () => <MasteringContainer title={props.TitlePage}/>}/>
+                    <Route path="/socialweb" render={ () => <SocialWebContainer title={props.TitlePage}/>}/>
+                    <Route path="/videodev" render={ () => <VideoDevContainer title={props.TitlePage}/>}/>
                 </div>
             </section>
         </main>
