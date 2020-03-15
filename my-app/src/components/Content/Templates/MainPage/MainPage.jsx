@@ -33,7 +33,6 @@ function MainPage(props) {
 
     let handleSubmit = (event) => {
         event.preventDefault();
-        this.setState({ state: this.state });
     };
 
     return (
