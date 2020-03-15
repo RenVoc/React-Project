@@ -13,11 +13,10 @@ let reRenderTree = () => {
         document.getElementById('root'));
 };
 
-reRenderTree(store.getState());
+reRenderTree();
 
 store.subscribe(() => {
-    let state = store.getState();
-    reRenderTree(state);
+    reRenderTree();
 });
 
 

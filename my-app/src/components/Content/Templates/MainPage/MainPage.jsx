@@ -1,6 +1,8 @@
 import React from "react";
 
 function MainPage(props) {
+
+
     let Title = props.title;
     let NewDescription = React.createRef();
     let NewName = React.createRef();
@@ -31,6 +33,7 @@ function MainPage(props) {
 
     let handleSubmit = (event) => {
         event.preventDefault();
+        this.setState({ state: this.state });
     };
 
     return (
